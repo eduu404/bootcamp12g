@@ -5,6 +5,7 @@
 header{
     background-color: turquoise;
     padding: 10px;
+    margin: 20px;
 }
 
 nav{
@@ -12,6 +13,30 @@ nav{
     background-color: fuchsia;
 }
 
+footer{
+    background-color: rgb(181, 181, 250);
+    border: 6px;
+    border-color: blue;
+    margin: 20px;
+    height: 25px;
+}
+
+section{
+    background-color: blue;
+    padding: 10px;
+    margin: 15px;
+    float: left;
+    width: 65%;
+}
+
 aside{
     float: right;
+    margin: 15px;
+    background-color: pink;
+    width: 30%;
+}
+
+p.art{
+    background-color: pink;
+    height: 80px;
 }
