@@ -1,0 +1,22 @@
+.card .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 15;
+  margin-right: 0;
+}
+
+.card .row div img {
+  border-radius: 100%;
+  width: 60px;
+}
+
+.card .row .carlos {
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+.card .row .carlos h4 {
+  margin-bottom: 0;
+}
+/*# sourceMappingURL=style.css.map */
