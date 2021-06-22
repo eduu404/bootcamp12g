@@ -1,0 +1,38 @@
+            <!--Eduu-->
+            <aside class="d-none d-md-flex col-md-3" border: 2px blue;>
+                <div class="card-2" style="width: 18rem;">
+                    <img src="../Projecto9Bootstrap/img/gr61rcv6d7es2as3hi2t.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">New Forem Changelog Entries!</p>
+                      <p class="card-text">→ "Lock Discussions on Posts"<br>
+                                           → "Accessibility Enhancements"
+                      </p>
+                    </div>
+                </div>
+                <div class="card1" style="width: 18rem;">
+                    <div class="card-header">
+                      Listings
+                    </div>
+                    <div class="crayons-card__actions">
+                        <a href="/listings" class="crayons-link--branded fw-medium fs-s">See all</a>
+                      </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item">Looking for web developer ?
+                          <div><a class="link1" href="#">forhire</a></div></div>
+                      </li>
+                      <li class="list-group-item">Lead Platform / Infrastructure Engineer
+                        <div><a class="link1" href="#">jobs<a/></div>
+                      </li>
+                      <li class="list-group-item">Course Launch: Competitive programming - Crack your coding Interview
+                        <div><a class="link1" href="#">education</a></div>
+                      </li>
+                      <li class="list-group-item">DEVniverse notion Template - The Content creator's Space
+                        <div><a class="link1" href="#">products</a></div>
+                      </li>
+                      <li class="list-group-item">Backend handbook for Ruby on Rails applications
+                        <div><a class="link1" href="#">products</a></div>
+                      </li>
+                    </ul>
+                  </div>
+                
+            </aside>

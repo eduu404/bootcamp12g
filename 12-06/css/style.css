@@ -1,0 +1,49 @@
+body{
+    font-family: sans-serif;
+}
+
+.box1{
+    width: 140px;
+    height: 80px;
+    margin: 10px;
+    padding: 20px;
+    border: 3px solid blue;
+    background-color: blueviolet;
+}
+
+.box2{
+    width: 140;
+    height: 80px;
+    margin: 10px;
+    padding: 20px;
+    background-color: cornflowerblue;
+    border-width: 4px 7px 9px 12px;
+    border-style: dashed dotted groove double;
+    border-color: darkgoldenrod cyan burlywood gray;
+}
+
+.box3{
+    width: 140;
+    height: 80px;
+    margin: 10px;
+    padding: 20px;
+    background-color: lightyellow;
+    border: 5px orange inset;
+}
+
+.box4{
+    width: 140;
+    height: 80px;
+    margin: 10px;
+    padding: 20px;
+    background-color: lightyellow;
+    border: 5px orange outset;
+}
+
+@media only screen and (max-width: 576px){
+    
+}
+
+@media only screen and (min-width: 577px) and (max-width: 992px){
+    
+}
