@@ -25,7 +25,7 @@ server.get('/koders', async (request, response) => {
 
 
     response.json({
-        success: true
+        success: true,
         message: 'all koders of DB',
         data: {
             koders
@@ -42,3 +42,12 @@ server.get('/koders', async (request, response) => {
 
 
 Mongoose.connect(url, {useNewUrlParser: true, useUnifiedTopology: true})
+    .then((connection) => {
+        console.log('Yeei DB Connected!')
+        server.listen(8080, () => {
+            console.log('Server listening')
+        })
+    })
+    .catch(err => {
+        console.log('Error: ', err)
+    })
