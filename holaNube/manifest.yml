@@ -1,0 +1,5 @@
+applications:
+- name: hola-mundo
+  memory: 32M
+  stack: cflinuxfs3
+  buildpack:
