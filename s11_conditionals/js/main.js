@@ -2,56 +2,26 @@
 */
 
 function evaluarInicial(cadena){
-    let inicial = cadena.charAt(0)
-    switch(inicial){
-        case 'a':
-            console.log("La cadena " + cadena + " comienza con la vocal A.")
-        break;
-        case 'e':
-            console.log("La cadena " + cadena + " comienza con la vocal E.")
-        break;
-        case 'i':
-            console.log("La cadena " + cadena + " comienza con la vocal I.")
-        break;
-        case 'o':
-            console.log("La cadena " + cadena + " comienza con la vocal O.")
-        break;
-        case 'u':
-            console.log("La cadena " + cadena + " comienza con la vocal U.")
-        break;
-        case '0':
-            console.log("La cadena " + cadena + " comienza con el número 0")
-        break;
-        case '1':
-            console.log("La cadena " + cadena + " comienza con el número 1")
-        break;
-        case '2':
-            console.log("La cadena " + cadena + " comienza con el número 2")
-        break;
-        case '3':
-            console.log("La cadena " + cadena + " comienza con el número 3")
-        break;
-        case '4':
-            console.log("La cadena " + cadena + " comienza con el número 4")
-        break;
-        case '5':
-            console.log("La cadena " + cadena + " comienza con el número 5")
-        break;
-        case '6':
-            console.log("La cadena " + cadena + " comienza con el número 6")
-        break;
-        case '7':
-            console.log("La cadena " + cadena + " comienza con el número 7")
-        break;
-        case '8':
-            console.log("La cadena " + cadena + " comienza con el número 8")
-        break;
-        case '9':
-            console.log("La cadena " + cadena + " comienza con el número 9")
-        break;
-        default:
-                console.log("La cadena " + cadena + " comienza con el carácter especial: " + cadena.charAt(0))
-        break;
+    var inicial = cadena.charAt(0)
+    var tipoInicial = "";
+    console.log(inicial)
+    if((inicial => 0) && (inicial <= 9)){
+        console.log("La cadena " + cadena + " comienza con el número: " + inicial)
+    } else if((inicial => "a") && (inicial <= "z")){
+        tipoInicial = "letra"
+        }else{
+            tipoInicial = "simbolo"
+        }
+    
+    if(tipoInicial = "letra"){
+        if(inicial = "a"){
+            console.log("La cadena " + cadena + " comienza con la vocal: " + inicial)
+            }else{
+                console.log("La cadena " + cadena + " comienza con la consonante: " + inicial)
+            }
+        if(tipoInicial = "simbolo"){
+            console.log("La cadena " + cadena + " comienza con el carácter especial: " + inicial)
+        }
     }
 }
 
@@ -75,4 +45,3 @@ evaluarInicial(cadena)
     input: cerveza
     output: false
 */
-
