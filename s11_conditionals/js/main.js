@@ -91,6 +91,30 @@ cadena = prompt("Escribe una cadena:")
 evaluarInicial(cadena)
 
 
+/* ESTA ES UNA FORMA OPTIMIZADA PARA RESOLVER EL EJERCICIO DE ARRIBA:
+
+function evaluarInicial(cadena){
+    var inicial = cadena.charAt(0)
+    var ascii = inicial.charCodeAt()
+    console.log(inicial)
+    if((inicial >= 0) && (inicial <= 9)){
+        console.log("La cadena " + cadena + " comienza con el número: " + inicial)
+    }else if((ascii >= 65 && ascii <= 90) || (ascii >= 97 && ascii <= 122)){
+        inicial.match(/[aeiou]/gi) ?
+          console.log("La cadena " + cadena + " comienza con la vocal: " + inicial) : console.log("La cadena " + cadena + " comienza con la consonante: " + inicial)
+    }else{
+        console.log("La cadena " + cadena + " comienza con el símbolo: " + inicial)
+    }
+}
+
+cadena = prompt("Escribe una cadena:")
+evaluarInicial(cadena)
+*/
+
+
+
+
+
 
 /* EJERCICIO 2: Inferir qué se debe hacer con la entrada para que dé las siguientes salidas.
 
