@@ -29,6 +29,7 @@ console.log(someArray)*/
     Koder 3: "Wendy"
 */
 
+/*
 function pedirKoders(){
     let cantidad = prompt("Escribe la cantidad de koders:")
     let kodersArray = []
@@ -41,7 +42,7 @@ function pedirKoders(){
     return kodersArray
 }
 
-pedirKoders()
+pedirKoders()*/
 
 
 /*
@@ -52,3 +53,26 @@ pedirKoders()
         Koder 1: Israel Salinas Martinez (I. S. M.)
 */
 
+
+function pedirKoders(cantidad){
+    let kodersArray = []
+
+    for(let i=0; kodersArray.length < cantidad; i++){
+        let koderName = prompt("Escribe el nombre del koder " + (i+1) + ":")
+        console.log("Koder " + (i+1) + ": " + koderName)
+        kodersArray.push(koderName)
+    }
+    return kodersArray
+}
+
+function pedirNumero(koders){
+    let numero = parseInt( prompt("Escribe un número:") )
+    console.log("el koder n°" + numero + " es: " + koders[numero-1])
+}
+
+function ordenDescendente(koders){
+    console.log(koders)
+}
+
+var cantidad = prompt("Escribe la cantidad de koders:")
+ordenDescendente( pedirNumero( pedirKoders ( cantidad ) ) )
