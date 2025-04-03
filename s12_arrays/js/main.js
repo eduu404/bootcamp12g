@@ -53,7 +53,6 @@ pedirKoders()*/
         Koder 1: Israel Salinas Martinez (I. S. M.)
 */
 
-
 function pedirKoders(cantidad){
     let kodersArray = []
 
@@ -70,9 +69,5 @@ function pedirNumero(koders){
     console.log("el koder n°" + numero + " es: " + koders[numero-1])
 }
 
-function ordenDescendente(koders){
-    console.log(koders)
-}
-
 var cantidad = prompt("Escribe la cantidad de koders:")
-ordenDescendente( pedirNumero( pedirKoders ( cantidad ) ) )
+pedirNumero( pedirKoders ( cantidad ) ) 
