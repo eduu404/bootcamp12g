@@ -69,3 +69,12 @@ groupBands(songsData)
 
 let songLabels = songsData.map(song => `La cancion ${ song.name } es de ${ song.band }`)
 console.log(songLabels)
+
+/*
+let nirvSong = songsData.filter(song => {
+    return song.band === "Nirvana"
+})*/
+
+let nirvSong = songsData.filter(({band}) => band === "Nirvana")
+
+console.log(nirvSong)
