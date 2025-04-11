@@ -27,10 +27,14 @@ console.log(navbar)
 console.log(navbar2)*/
 
 let parrafo = document.createElement('p');
+let textoParrafo = document.createTextNode('Este es un párrafo')
 let div = document.createElement('div');
 let body = document.querySelector('body');
 let padre = document.querySelector('#padre')
 
 body.appendChild(div);
+//body.appendChild(parrafo);
 padre.appendChild(div);
+parrafo.appendChild(textoParrafo);
+parrafo.textContent = "El párrafo ha cambiado"
 padre.insertBefore(parrafo, div);
