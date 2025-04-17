@@ -22,11 +22,27 @@
                 font-family: Arial, Helvetica, sans-serif;
                 font: size 18px;
             }
+
+            h3{
+                color: limegreen;
+                font-family: Arial, Helvetica, sans-serif;
+                font: size 18px;
+                background-color: black;
+            }
             
             #counter{
                 color: purple;
                 font-family: Comic Sans MS;
                 font: size 28px;
+            }
+
+            .container2{
+                width: 300px;
+                border: 1px;
+                border-style: dashed;
+                border-color: rgb(65, 7, 7);
+                padding: 14px 28px;
+                align-items: center;
             }
 
         </style>
@@ -48,6 +64,31 @@
                 </div>
             </div>
         </div>
+
+        <div class="container2">
+            <div class="row">
+                <div class="col-12">
+                    <form action>
+                        <p>Nombre:
+                        <input id="firstname-input" type="text" class="form-control">
+                    </p>
+                        <h1 id="border"></h1>
+                    </form>
+                    <form action>
+                        <p>Apellidos:
+                        <input id="lastname-input" type="text" class="form-control">
+                    </p><br>
+                    <div align="center">
+                        <button id="guardar">Guardar</button>
+                    </div>
+                        
+                    </form>
+                    
+                </div>
+                
+            </div>
+        </div>
+        <h3 id="datos">E</h3>
     <script src="js/main.js"></script>
     </body>
 </html>

@@ -18,3 +18,24 @@ headerInput.addEventListener('keyup', (event) => {
     let textValue = event.target.value
     document.getElementById('border').textContent = textValue
 })
+
+let pArray =[];
+pArray.forEach((person)=>{
+    console.log(person)
+})
+
+let saveButton = document.getElementById('guardar');
+let pObj = {};
+
+    let firstnameInput = document.getElementById('firstname-input');
+    let lastnameInput = document.getElementById('lastname-input');
+
+saveButton.addEventListener('click', () => {
+    
+    pObj.fname = firstnameInput.value
+    pObj.lstname = lastnameInput.value
+    let conth3 = document.createElement("h3")
+    let h3Text = document.createTextNode()
+    document.getElementById('datos').textContent = pObj.fname
+    pArray.push(pObj)
+})
