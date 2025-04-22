@@ -33,7 +33,6 @@ let body = document.querySelector('body');
 let padre = document.querySelector('#padre')
 
 body.appendChild(div);
-//body.appendChild(parrafo);
 padre.appendChild(div);
 parrafo.appendChild(textoParrafo);
 parrafo.textContent = "El párrafo ha cambiado"

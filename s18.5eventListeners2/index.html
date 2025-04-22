@@ -23,14 +23,6 @@
                 font-family: Arial, Helvetica, sans-serif;
                 font: size 18px;
             }
-
-            h3{
-                color: limegreen;
-                font-family: Arial, Helvetica, sans-serif;
-                font: size 18px;
-                background-color: black;
-                width: 300px;
-            }
             
             #counter{
                 color: purple;
@@ -49,24 +41,7 @@
 
         </style>
     </head>
-    <body id="person-table">
-        <div>
-            <button id="mas" class="btn add">Aumentar</button>
-            <button id="menos" class="btn del">Disminuir</button>
-        </div>
-        <h1 id="counter">0</h1>
-
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <form action>
-                        <input id="header-input" type="text" class="form-control">
-                        <h1 id="border"></h1>
-                    </form>
-                </div>
-            </div>
-        </div>
-
+    <body>
         <div class="container2">
             <div class="row">
                 <div class="col-12">
@@ -74,7 +49,6 @@
                         <p>Nombre:
                         <input id="firstname-input" type="text" class="form-control">
                     </p>
-                        <h1 id="border"></h1>
                     </form>
                     <form action>
                         <p>Apellidos:
@@ -85,38 +59,23 @@
                     </div>
                         
                     </form>
-                    
                 </div>
-                
             </div>
         </div>
-        <h3 id="datos"></h3>
-        <table class="table table-striped table-dark">
+        <div class="col-12 col-md-6">
+        <table class="table table-dark mt-3">
             <thead>
               <tr>
-                <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
+                <td scope="col">#</td>
+                <td scope="col">Nombre</td>
+                <td scope="col">Apellidos</td>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-              </tr>
+            <tbody id="person-table">
+              
             </tbody>
           </table>
+        </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
