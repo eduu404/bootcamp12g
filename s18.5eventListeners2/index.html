@@ -8,26 +8,22 @@
             .btn {
             border: none; 
             color: white; 
-            padding: 14px 28px; 
+            padding: 12px 20px; 
             cursor: pointer; 
             border-radius: 5px; 
             }
-            .add {background-color: #007bff;} 
-            .add:hover {background: #0b7dda;}
 
-            .del {background-color: #f44336;} 
+            .add {background-color: #048061;} 
+            .add:hover {background: #005e59;}
+
+            .del {background-color: #f44336;
+                  padding: 4px 10px; } 
             .del:hover {background: #da190b;}
 
             h1{
                 color: peru;
                 font-family: Arial, Helvetica, sans-serif;
                 font: size 18px;
-            }
-            
-            #counter{
-                color: purple;
-                font-family: Comic Sans MS;
-                font: size 28px;
             }
 
             .container2{
@@ -39,23 +35,35 @@
                 align-items: center;
             }
 
+            tr{
+                width: 100px;
+            }
+
+            tdNombres{
+                width: 100px;
+            }
+
+            .tdBut{
+                width: 25px;
+                background-color: #f44336;
+            }
+
         </style>
     </head>
     <body>
         <div class="container2">
             <div class="row">
                 <div class="col-12">
-                    <form action>
+                    <form action="" class="bg-dark text-white mt-3 border rounded p-3">
                         <p>Nombre:
-                        <input id="firstname-input" type="text" class="form-control">
+                        <input id="firstname-input" type="text" class="form-control" value="eduu">
                     </p>
-                    </form>
-                    <form action>
+                    
                         <p>Apellidos:
-                        <input id="lastname-input" type="text" class="form-control">
+                        <input id="lastname-input" type="text" class="form-control" value="perezz">
                     </p><br>
                     <div align="center">
-                        <button id="guardar">Guardar</button>
+                        <button type="button" id="guardar" class="btn add">Guardar</button>
                     </div>
                         
                     </form>
@@ -68,7 +76,8 @@
               <tr>
                 <td scope="col">#</td>
                 <td scope="col">Nombre</td>
-                <td scope="col">Apellidos</td>
+                <td class="tdNombres" scope="col">Apellidos</td>
+                <td scope="col"></td>
               </tr>
             </thead>
             <tbody id="person-table">
