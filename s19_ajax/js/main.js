@@ -1,5 +1,5 @@
-const imagen = document.getElementById("foto_gato")
-const ajax_status = document.getElementById("ajax_status")
+const imagen = document.getElementById('foto_gato')
+const idH5 = document.getElementById('id_gato')
 
 const actualizarGato = () => { 
     var xhttp = new XMLHttpRequest();
@@ -7,21 +7,24 @@ const actualizarGato = () => {
         console.log('status', this.status)
         
         if(this.readyState == 4 && this.status == 200){
-            const RespuestaAjax = xhttp.responseText
-            console.log(RespuestaAjax)
-            const respuestaJS = JSON.parse(RespuestaAjax)
+            console.log('status', this.status)
+            const RespuestaAjax = this.responseText
+            console.log(RespuestaAjax);
+            
+            const respuestaJS = JSON.parse(RespuestaAjax);
             console.log(respuestaJS)
-
-            const url = respuestaJS.file
-            console.log(url)
-            imagen.setAttribute('src', url)
-            ajax_status.innerHTML = ""
+            const idGato = respuestaJS[0].id;
+            const dir = respuestaJS[0].url;
+            console.log(idGato)
+            console.log(dir)
+            idH5.setAttribute('value', idGato)
+            imagen.setAttribute('src', dir)
         }
     };
-    xhttp.open("GET", "https://picsum.photos", true);
+    xhttp.open("GET", "https://api.thecatapi.com/v1/images/search?size=med&mime_types=jpg&format=json&has_breeds=true&order=RANDOM&page=0&limit=1", true);
     xhttp.send();
 }
-//
+
 const btnActualizar = document.getElementById("btn_gato");
 btnActualizar.addEventListener('click', ()=>{
     actualizarGato()

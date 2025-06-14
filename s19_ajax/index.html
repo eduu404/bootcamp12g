@@ -24,13 +24,26 @@
                 text-align: center;
             }
 
+              h5{
+                color: rgb(201, 103, 4);
+                font-family: Arial, Helvetica, sans-serif;
+                font: size 12px;
+                text-align: center;
+            }
+
             img{
                 max-width: 300px;
                 max-height: 300px;
             }
 
+            #gris{
+                width: 500px;
+                height: 500px;
+            }
+
             .container2{
-                width: 300px;
+                width: 500px;
+                height: 500px;
                 border: 1px;
                 border-style: dashed;
                 border-color: rgb(65, 7, 7);
@@ -44,19 +57,24 @@
         <div class="container2">
 
             <h1>Catigram</h1>
-            <h2 id="ajax_status"></h2>
+            
 
-            <div class="row">
+            <div class="row" >
                 <div class="col-12">
                     <form action="" class="bg-dark text-white mt-3 border rounded p-3">
                       
                     <div align="center">
-
-                        <div>
+                        
+                        <div id="gris">
+                            
                             <img id="foto_gato" src="https://purr.objects-us-east-1.dream.io/i/v0SoPzk.jpg">
-                        </div>
+                            <br><br>
+                            <h5 id="id_gato" value=""></h5>
+                        
+                        
                         <br>
                         <button type="button" id="btn_gato" class="btn">Cambiar gato</button>
+                        </div>
                     </div>
                         
                     </form>
